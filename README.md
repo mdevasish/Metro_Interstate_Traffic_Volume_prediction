@@ -27,63 +27,38 @@ Folder Structure :
 |	.ipynb_checkpoints
 
 		|-> eda-checkpoint.ipynb
-		
 		|-> Modelling-checkpoint.ipynb
-		
 |	data
 
-		|-> final_dict.json
-		
+		|-> final_dict.json	
 		|-> hol_dict.json
-		
 		|-> hour_buckets.json
-		
 		|-> month_buckets.json
-		
 		|-> ohe.gz
-		
 		|-> processed.csv
-		
 		|-> scaler.gz
-		
 		|-> traffic.csv
-		
 |	mlp
 
 		|-> __pycache__
-		
 				|-> Models.cpython-37.pyc
-				
 				|-> Models.cpython-38.pyc
-				
 		|-> Models.py
-		
 |	Models
 
 		|-> LassoRegression.sav
-		
 		|-> LinearRegression.sav
-		
 		|-> RidgeRegression.sav
-		
 |	Screenshots
 
 		|-> snow.jpg
-		
 |->	config.ini
-
 |-> eda.ipynb
-
 |-> Extraction.py
-
 |-> Modelling.ipynb
-
 |-> README.md
-
 |-> requirements.txt
-
 |-> run.py
-
 |-> run.sh
 
 Basic Insights from EDA :
