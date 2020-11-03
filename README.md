@@ -1,10 +1,8 @@
 # Metro_Interstate_Traffic_Volume_prediction
 Predict the hourly traffic volume of Minneapolis-St Paul Interstate I-94 based on weather conditions and list of holidays
 
-Applicant Details :
 
-Name : PATNANA MANIKANTHA DEVASISH
-email : devasishp.2018@mitb.smu.edu.sg
+Author Name : PATNANA MANIKANTHA DEVASISH
 
 Problem Statement :
 The objective of the project is to predict the approximate traffic volume for a specific point of date and time, given the climatic conditions like rainfall, temperature, percentage of the cloud cover, snowfall and the textual description of climate.
@@ -21,8 +19,8 @@ Overview of the Deliverable Folder and Folder Structure :
 data 				: Folder containing the csv files and metadata related to MinMaxscaler and onehotencoder etc.
 mlp  				: Folder containing the implementation of ML pipeline named Models.py
 Models 				: Folder contain the persisted version of the model
-Screenshots 		: Screenshot of a plot used in EDA.ipynb
-.ipynb_checkpoints  : Checkpoints of the python Notebooks
+Screenshots 		        : Screenshot of a plot used in EDA.ipynb
+.ipynb_checkpoints              : Checkpoints of the python Notebooks
 
 Folder Structure :
 
@@ -129,12 +127,8 @@ Results :
 
 1. All the implemented models showed no signs of either overfitting or underfitting.
 2. The metrics root mean squared error and R square have been consistent across all the algorithms despite implementing regularisation based algorithms with highest regularisation. Hyperparameter tuning is not conducted here because the models did not show any signs of either overfitting or underfitting.
-3. The diagnostic plots in all the models reveal that the models have been resilient in predicting the high traffic volumes and failed mostly in predicting the low traffic volumes. 
-4. All the three models have predicted negative traffic volume, which is not acceptable. But out of all the models, Lasso Regression has performed better in terms of number of predictions with low negative traffic volume.
+3. The diagnostic plots in all the models reveal that the models have been resilient in predicting the high traffic volumes and failed mostly in predicting the low traffic volumes for equation based models. 
+4. All the four models have predicted negative traffic volume, which is not acceptable. But out of all the equation based models, Lasso Regression has performed better in terms of number of predictions with low negative traffic volume. And the DecisionTreeRegressor has the best performance. 
 5. Based on the diagnostics plots, the feature engineering for low traffic volumes have to be more strong to reduce the prediction error.
-6. In order to offset the negative traffic volume, few advanced models like DecisionTreeRegressor can be implemented and improve the prediction capability of the models.
+6. In order to offset the negative traffic volume, few advanced models like DecisionTreeRegressor are be implemented and improve the prediction capability of the models.
 
-
-Note :
-
-1. I have not received any application ID during the application process. So the naming convention of the folder may differ.
