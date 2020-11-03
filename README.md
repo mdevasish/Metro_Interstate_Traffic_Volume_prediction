@@ -25,35 +25,65 @@ Screenshots 		        : Screenshot of a plot used in EDA.ipynb
 Folder Structure :
 
 |	.ipynb_checkpoints
+
 		|-> eda-checkpoint.ipynb
+		
 		|-> Modelling-checkpoint.ipynb
+		
 |	data
+
 		|-> final_dict.json
+		
 		|-> hol_dict.json
+		
 		|-> hour_buckets.json
+		
 		|-> month_buckets.json
+		
 		|-> ohe.gz
+		
 		|-> processed.csv
+		
 		|-> scaler.gz
+		
 		|-> traffic.csv
+		
 |	mlp
+
 		|-> __pycache__
+		
 				|-> Models.cpython-37.pyc
+				
 				|-> Models.cpython-38.pyc
+				
 		|-> Models.py
+		
 |	Models
+
 		|-> LassoRegression.sav
+		
 		|-> LinearRegression.sav
+		
 		|-> RidgeRegression.sav
+		
 |	Screenshots
+
 		|-> snow.jpg
+		
 |->	config.ini
+
 |-> eda.ipynb
+
 |-> Extraction.py
+
 |-> Modelling.ipynb
+
 |-> README.md
+
 |-> requirements.txt
+
 |-> run.py
+
 |-> run.sh
 
 Basic Insights from EDA :
@@ -108,10 +138,13 @@ Steps involved in the constructing the ML pipeline are as follows :
 
 Models used :
 
-Models implemented are Linear regression, Lasso Regression and Ridge Regression. The rationale behind the choise of models is as follows
+Models implemented are Linear regression, Lasso Regression, Ridge Regression and DecisionTreeRegressor. The rationale behind the choise of models is as follows
 
 1. Linear Regression along with the regularization variants Lasso Regression and Ridge regression were primarily chosen for the implementation because they form the baseline family of regression suite.
+
 2. Secondly, this suite of models have the ability to make the stakeholders explain the model in the form of an equation. Business stakeholders also get to understand the impact of slight change in the input features.
+
+3. Equation based algorithms have been incapable in predicting the traffic volume during the wee hours. And for the sole reason, DecisionTreeRegressor is used.
 
 Instructions to use the bash file :
 
