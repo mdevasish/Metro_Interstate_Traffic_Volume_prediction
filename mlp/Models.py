@@ -15,7 +15,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 
-class model_construction():
+class model_construction:
     
     def __init__(self,data,model,fit_intercept = True,alpha = 1.0, max_iter = 1000, solver = 'auto'):
         '''
